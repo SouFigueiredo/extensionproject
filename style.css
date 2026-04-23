@@ -1,1 +1,221 @@
-
+body {
+  min-height: 100vh;
+  background: #0b0c10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Sora', sans-serif;
+  color: #e8e6f0;
+  padding: 24px;
+  overflow: hidden;
+}
+ 
+/* --- Orbs de fundo --- */
+.bg-orb {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+  opacity: 0.35;
+}
+ 
+.orb1 {
+  width: 520px;
+  height: 520px;
+  background: #2d1f6e;
+  top: -160px;
+  left: -160px;
+}
+ 
+.orb2 {
+  width: 360px;
+  height: 360px;
+  background: #0f4a38;
+  bottom: -100px;
+  right: -80px;
+}
+ 
+/* --- Wrapper central --- */
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  animation: fadeUp 0.5s ease both;
+}
+ 
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+ 
+/* --- Header --- */
+.card-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+ 
+.brand-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #4a3fb5, #1a8c68);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+ 
+.card-header h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #f0eefe;
+  letter-spacing: -0.2px;
+  margin-bottom: 6px;
+}
+ 
+.subtitle {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 300;
+}
+ 
+/* --- Card principal --- */
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 36px 32px;
+  backdrop-filter: blur(12px);
+}
+ 
+/* --- Campos --- */
+.field {
+  margin-bottom: 18px;
+}
+ 
+label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 8px;
+}
+ 
+.input-wrap {
+  position: relative;
+}
+ 
+.input-icon {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.22);
+  pointer-events: none;
+  display: flex;
+}
+ 
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 11px 42px;
+  font-size: 14px;
+  color: #f0eefe;
+  font-family: 'Sora', sans-serif;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+ 
+input::placeholder {
+  color: rgba(255, 255, 255, 0.18);
+}
+ 
+input:focus {
+  border-color: rgba(74, 63, 181, 0.7);
+  background: rgba(74, 63, 181, 0.08);
+}
+ 
+.toggle-pass {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.22);
+  padding: 0;
+  display: flex;
+  transition: color 0.2s;
+}
+ 
+.toggle-pass:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+ 
+/* --- Link esqueceu senha --- */
+.forgot {
+  text-align: right;
+  margin-top: -8px;
+  margin-bottom: 24px;
+}
+ 
+.forgot a {
+  font-size: 12px;
+  color: rgba(120, 110, 220, 0.85);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+ 
+.forgot a:hover {
+  color: #a9a3f0;
+}
+ 
+/* --- Botão de login --- */
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #4a3fb5 0%, #332e8a 100%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Sora', sans-serif;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s, transform 0.15s;
+  margin-bottom: 20px;
+}
+ 
+.btn-login:hover  { opacity: 0.88; }
+.btn-login:active { transform: scale(0.98); }
+ 
+/* --- Link de cadastro --- */
+.register-link {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.3);
+}
+ 
+.register-link a {
+  color: #7f77dd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+ 
+.register-link a:hover { color: #b0aaf5; }
+ 
+/* --- Footer --- */
+.card-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.15);
+}
