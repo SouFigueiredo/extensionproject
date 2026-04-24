@@ -8,4 +8,4 @@ create table projetoext.usuarios (
 );
 commit;
 
-insert into projetoext.user_login (usuario, senha) VALUES ('admin', 'admin')
+insert into projetoext.usuarios (usuario, senha) VALUES ('admin', 'admin')
