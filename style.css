@@ -1,8 +1,4 @@
-<html>
-  <head>
-    <link ref="style.css" href="index.html>
-  </head>
-<style>
+
 body {
   min-height: 100vh;
   background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
@@ -105,10 +101,7 @@ footer {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.18);
 
-  </style>
-  </html>
-}
-
 footer::after {
+  
   content: '© 2026 · Todos os direitos reservados';
 }
