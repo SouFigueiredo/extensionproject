@@ -17,8 +17,9 @@ if ($result->num_rows > 0) {
         $_SESSION['usuario'] = $dados['usuario'];
         echo "Login realizado com sucesso!";
     } else {
-        echo "Senha incorreta!"
+        echo "Senha incorreta!";
     }
 } else  {
-    echo "Usuário não encontrado!"
+    echo "Usuário não encontrado!";
 }
+?>
