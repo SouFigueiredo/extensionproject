@@ -1,7 +1,7 @@
 create database projetoext;
 commit;
 
-create table projetoext.user_login (
+create table projetoext.usuarios (
 	id int PRIMARY KEY AUTO_INCREMENT,
     usuario varchar(16),
     senha varchar(16)
