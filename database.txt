@@ -1,0 +1,11 @@
+create database projetoext;
+commit;
+
+create table projetoext.user_login (
+	id int PRIMARY KEY AUTO_INCREMENT,
+    usuario varchar(16),
+    senha varchar(16)
+);
+commit;
+
+insert into projetoext.user_login (usuario, senha) VALUES ('admin', 'admin')
