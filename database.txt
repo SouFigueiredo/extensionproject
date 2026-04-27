@@ -10,4 +10,4 @@ CREATE TABLE usuarios (
 
 -- Gere o hash pelo PHP antes de inserir (veja abaixo)
 INSERT INTO usuarios (usuario, senha) 
-VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
+VALUES ('admin', 'admin');
