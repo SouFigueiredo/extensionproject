@@ -1,11 +1,13 @@
-create database projetoext;
-commit;
+CREATE DATABASE projetoext;
 
-create table projetoext.usuarios (
-	id int PRIMARY KEY AUTO_INCREMENT,
-    usuario varchar(16),
-    senha varchar(16)
+USE projetoext;
+
+CREATE TABLE usuarios (
+    id      INT PRIMARY KEY AUTO_INCREMENT,
+    usuario VARCHAR(50)  NOT NULL UNIQUE,
+    senha   VARCHAR(255) NOT NULL
 );
-commit;
 
-insert into projetoext.usuarios (usuario, senha) VALUES ('admin', 'admin')
+-- Gere o hash pelo PHP antes de inserir (veja abaixo)
+INSERT INTO usuarios (usuario, senha) 
+VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
