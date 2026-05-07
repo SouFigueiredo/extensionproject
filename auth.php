@@ -1,25 +1,30 @@
 <?php
+
 session_start();
-include("connect.php");
+require_once 'connect.php';
 
-$user = $_POST['inUser'];
-$pass = $_POST['inPass'];
+$usuario = $_POST['inUser'];
+$senha = $_POST['inPass'];
 
-$user = $conn->real_escape_string($user);
+$stmt = $conn->prepare("SELECT * FROM usuarios WHERE usuario = ?");
+$stmt->bind_param("s", $usuario);
 
-$sql = "SELECT * FROM usuarios WHERE usuario = '$user'";
-$result = $conn->query($sql);
+$stmt->execute();
+
+$result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
     $dados = $result->fetch_assoc();
 
-    if (password_verify($pass, $dados['senha'])) {
+    if (password_verify($senha, $dados['senha'])) {
         $_SESSION['usuario'] = $dados['usuario'];
-        echo "Login realizado com sucesso!";
+        echo "Login realizado.";
     } else {
+
         echo "Senha incorreta!";
     }
-} else  {
+
+} else {
     echo "Usuário não encontrado!";
 }
 ?>
