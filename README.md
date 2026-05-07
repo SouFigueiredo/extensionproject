@@ -81,17 +81,31 @@ Isso permite cadastrar usuários diretamente no MySQL de forma segura.
 ```txt
 extensionproject/
 │
-├── index.html
-├── style.css
-├── auth.php
-├── connect.php
-├── gerarhash.php
-│
 ├── api/
-│   └── auth/
-│       └── login.php
+│   ├── auth/
+│   │   ├── login.php
+│   │   └── logout.php
+│   │
+│   ├── config/
+│   │   └── connect.php
+│   │
+│   ├── reservas/
+│   │   ├── cancelar.php
+│   │   ├── criar.php
+│   │   └── listar.php
+│   │
+│   └── salas/
+│       ├── criar.php
+│       ├── deletar.php
+│       ├── editar.php
+│       └── listar.php
 │
-└── assets/
+├── public/
+│   ├── js/
+│   ├── index.html
+│   └── style.css
+│
+└── README.md
 ```
 
 ---
