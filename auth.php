@@ -20,7 +20,6 @@ if ($result->num_rows > 0) {
         $_SESSION['usuario'] = $dados['usuario'];
         echo "Login realizado.";
     } else {
-
         echo "Senha incorreta!";
     }
 

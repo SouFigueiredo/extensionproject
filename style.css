@@ -100,8 +100,10 @@ footer {
   margin-top: 20px;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.18);
-}
 
 footer::after {
+  
   content: '© 2026 · Todos os direitos reservados';
+}
+
 }
