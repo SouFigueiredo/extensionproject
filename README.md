@@ -1,4 +1,4 @@
-# 📚 Extension Project — Gestão Inteligente de Salas
+# 📚 UneSpace — Gestão Inteligente de Salas
 
 Sistema web desenvolvido com foco em **gestão, visualização e agendamento de salas acadêmicas**, buscando facilitar a organização de ambientes dentro da faculdade de forma simples, rápida e eficiente.
 
@@ -128,7 +128,7 @@ extensionproject/
 
 # 💡 Visão do Projeto
 
-O Extension Project busca unir:
+O UneSpace busca unir:
 
 - organização acadêmica
 - praticidade
@@ -157,6 +157,6 @@ Atualmente o projeto está em fase inicial de desenvolvimento, com foco na const
 
 ---
 
-# ⭐ Extension Project
+# ⭐ UneSpace - Conectando salas da UNESC !
 
 > “Organizando espaços, facilitando conexões.”
