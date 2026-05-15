@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="style.css">
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Painel de Login</title>
 </head>
-<body>
-    <header>
-        <h1>Página de Autenticação</h1>
+
+<body class="min-h-screen bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460] flex flex-col items-center justify-center px-6 font-sans">
+    <header class="mb-6 text-center">
+        <img src="./img/unesc.webp" alt="Logo da UNESC">
+        <h1 class="text-[20px] font-semibold text-white/75 tracking-wide">
+            UneSpace - Gestão de Salas
+        </h1>
     </header>
-    <main>
+
+    <main class="w-full max-w-[360px] bg-white/5 border border-white/10 rounded-[20px] px-8 py-10 backdrop-blur-sm">
         <form action="../api/auth/login.php" method="POST">
-            <label for="inUser">Usuário: </label>
-            <input type="text" id="inUser" name="inUser" placeholder="Digite seu usuário">
-            <br>
-            <label for="inPass">Senha: </label>
-            <input type="password" id="inPass" name="inPass" placeholder="Digite sua senha">
-            <br>
-            <button type="submit">Fazer login</button>
+            <label 
+                for="inUser"
+                class="block text-[12px] font-semibold tracking-[0.08em] uppercase text-white/40 mb-2"
+            >
+                Usuário:
+            </label>
+            <input
+                type="text"
+                id="inUser"
+                name="inUser"
+                placeholder="Digite seu usuário"
+
+                class="w-full bg-white/5 border border-white/10 rounded-[10px]
+                px-4 py-3 text-white text-[15px]
+                outline-none transition-all duration-200
+                placeholder:text-white/20
+                focus:border-[#e94560]
+                focus:bg-[#e9456012]
+                mb-5"
+            >
+            <label 
+                for="inPass"
+                class="block text-[12px] font-semibold tracking-[0.08em] uppercase text-white/40 mb-2"
+            >
+                Senha:
+            </label>
+            <input
+                type="password"
+                id="inPass"
+                name="inPass"
+                placeholder="Digite sua senha"
+
+                class="w-full bg-white/5 border border-white/10 rounded-[10px]
+                px-4 py-3 text-white text-[15px]
+                outline-none transition-all duration-200
+                placeholder:text-white/20
+                focus:border-[#e94560]
+                focus:bg-[#e9456012]
+                mb-5"
+            >
+            <button
+                type="submit"
+
+                class="w-full py-3 mt-1 rounded-[10px]
+                bg-[#e94560] hover:bg-[#c73652]
+                active:scale-[0.98]
+                transition-all duration-150
+                text-white text-[15px] font-bold tracking-wide"
+            >
+                Fazer login
+            </button>
         </form>
     </main>
-    <footer></footer>
+
+    <footer class="mt-5 text-[12px] text-white/20">
+        © 2026 · Todos os direitos reservados
+    </footer>
+
 </body>
 </html>

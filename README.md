@@ -31,6 +31,7 @@ https://soufigueiredo.github.io/extensionproject/index.html
 
 - HTML5
 - CSS3
+- Tailwind
 - JavaScript
 - PHP
 - MySQL
@@ -110,15 +111,15 @@ extensionproject/
 
 ---
 
-# 🎯 Funcionalidades Planejadas
+# 🎯 Funcionalidades Implementadas + Planejamentos
 
 - [x] Tela de login
 - [x] Autenticação segura
 - [x] Integração com MySQL
 - [ ] Dashboard administrativo
 - [ ] Cadastro de salas
-- [ ] Sistema de agendamento
-- [ ] Controle de disponibilidade
+- [x] Sistema de agendamento
+- [x] Controle de disponibilidade
 - [ ] Diferentes níveis de usuário
 - [ ] Histórico de reservas
 - [ ] API REST completa

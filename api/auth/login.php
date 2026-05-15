@@ -20,10 +20,7 @@ if ($result->num_rows > 0) {
 
     if (password_verify($senha, $dados['senha'])) {
         $_SESSION['usuario'] = $dados['usuario'];
-        echo json_encode([
-            "success" => true,
-            "message" => "Login realizado"
-        ]);
+        header ("Location: ../../public/dashboard.php");
     } else {
         echo json_encode([
             "success" => false,
